@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<link rel="stylesheet" href="root/style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">Tropical Paradise</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About & Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="contact">
+    <h1>Contact Us</h1>
+
+    <h2>Send a Message</h2>
+
+    <form onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input id="name" type="text" required>
+
+        <label for="email">Email:</label>
+        <input id="email" type="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <h2>Our Location</h2>
+
+    <iframe 
+        src="https://maps.google.com/maps?q=Bali&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        height="300">
+    </iframe>
+
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Tropical Paradise Guest House</p>
+</footer>
+
+</body>
+</html>
